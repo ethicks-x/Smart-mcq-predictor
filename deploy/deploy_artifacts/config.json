@@ -1,0 +1,10 @@
+{
+  "max_len_prompt": 64,
+  "max_len_option": 128,
+  "embed_dim": 300,
+  "hidden_dim": 256,
+  "num_layers": 2,
+  "dropout": 0.3,
+  "vocab_size": 2975,
+  "val_map3": 0.9962499737739563
+}

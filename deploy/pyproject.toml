@@ -1,0 +1,17 @@
+[project]
+name = "deploy"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Sinchan G", email = "24f2008341@ds.study.iitm.ac.in" }
+]
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+deploy = "deploy:main"
+
+[build-system]
+requires = ["uv_build>=0.12.2,<0.13.0"]
+build-backend = "uv_build"
