@@ -4,3 +4,5 @@ service-wandb.txt
 W&B-api.txt
 kaggle_api.txt
 HF_TOKEN.txt
+
+__pycache__

@@ -89,8 +89,8 @@ def ui():
 
         gr.Examples(
             examples=[[
-                "Which planet is known as the red planet?",
-                "Venus", "Mars", "Jupiter", "Mercury", "Saturn",
+                "What is the proposed name for the field that is responsible for cosmic inflation and the metric expa...",
+                "Inflation", "Quanta", "Scalar", "Metric", "Conformal cyclic cosmology",
             ]],
             inputs=[prompt, a, b, c, d, e],
         )
