@@ -1,8 +1,4 @@
 # api-keys
-github-PAT.txt
-service-wandb.txt
-W&B-api.txt
-kaggle_api.txt
-HF_TOKEN.txt
+key_*
 
 __pycache__
