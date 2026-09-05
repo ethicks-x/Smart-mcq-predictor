@@ -27,8 +27,9 @@ jobs:
           pip install modal
 
       - name: Deploy job
+        working-directory: deploy
         env:
           MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
           MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
         run: |
-          modal deploy -m deploy.modal_app
+          modal deploy modal_app.py
