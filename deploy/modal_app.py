@@ -8,6 +8,7 @@ Expects ./deploy_artifacts/ next to this file, containing model_weights.pt,
 vocab.pkl and config.json as written by the notebook export cell.
 """
 
+from pathlib import Path
 import modal
 
 ARTIFACTS_REMOTE = "/root/deploy_artifacts"
@@ -95,5 +96,4 @@ def ui():
             inputs=[prompt, a, b, c, d, e],
         )
 
-    demo.queue(max_size=10)
     return mount_gradio_app(app=api, blocks=demo, path="/")

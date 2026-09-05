@@ -94,7 +94,7 @@ class Solver:
             self.word2id = pickle.load(f)
 
         self.model = BiLSTMSiamese(self.cfg["vocab_size"], self.cfg)
-        state = torch.load(d / "model_weights.pt", map_location="cpu")
+        state = torch.load(d / "model_weights.pt", map_location="cpu", weights_only=False)
         self.model.load_state_dict(state)
         self.model.eval()
         torch.set_num_threads(1)
